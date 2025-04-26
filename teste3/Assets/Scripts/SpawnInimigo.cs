@@ -1,3 +1,5 @@
+using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class SpawnInimigo : MonoBehaviour
@@ -24,12 +26,23 @@ public class SpawnInimigo : MonoBehaviour
 
     }
 
-    private void  SpawnarObjeto()
-    {
-        int objetoAleatorio = Random.Range(0, objetosParaSpawnar.Length);  
-        int pontoDeSpawnAleatorio = Random.Range(0, pontosDeSpawn.Length);
+   private void SpawnarObjeto()
+{
+    int objetoAleatorio = UnityEngine.Random.Range(0, objetosParaSpawnar.Length);  
+    int pontoDeSpawnAleatorio = UnityEngine.Random.Range(0, pontosDeSpawn.Length);
 
-        Instantiate(objetosParaSpawnar[objetoAleatorio], pontosDeSpawn[pontoDeSpawnAleatorio].position, Quaternion.Euler(0f, 0f, 0));
-        tempoAtualSpawn = tempoEntreSpawns;
-    }
+    Instantiate(objetosParaSpawnar[objetoAleatorio], pontosDeSpawn[pontoDeSpawnAleatorio].position, Quaternion.Euler(0f, 0f, 0));
+
+
+    // Log para imprimir o nome do objeto e do ponto de spawn
+    Debug.Log("Spawnou: " + objetosParaSpawnar[objetoAleatorio].name + 
+              " no ponto: " + pontosDeSpawn[pontoDeSpawnAleatorio].name);
+
+    // Reset do tempo
+    tempoAtualSpawn = tempoEntreSpawns;
 }
+
+    
+}
+
+
