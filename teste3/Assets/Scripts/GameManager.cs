@@ -1,30 +1,52 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public int LixoColetado;
+    public int pontuacaoAtual;
+    
+    public int Trash;
+    
     public static GameManager Instance;
+    
+    public TextMeshProUGUI textScore;  // Corrigido aqui
+    
+    public TextMeshProUGUI textLixo;
 
 
+    void Start ()
+    {
+        pontuacaoAtual = 0;
+        textScore.text = "SCORE: " + pontuacaoAtual;
+
+        
+        
+        Trash = 0;  
+        textLixo.text = "Lixo Coletado: " + Trash;
+    }
+
+    
+    
     void Awake()
     {
         Instance = this;
     } 
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
+    
     public void Score(int Myscore)
     {
-        LixoColetado += Myscore;
+       pontuacaoAtual += Myscore;
+       textScore.text = "SCORE: " + pontuacaoAtual;
+    }
+
+    
+    
+    public void MyTrash(int Lixo)
+    {
+       Trash += Lixo;
+       textLixo.text = "Lixo Coletado: " + Trash;
     }
 }

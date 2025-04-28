@@ -12,7 +12,7 @@ public class ColetaLixo : MonoBehaviour
 
     void Start()
     {
-        PlayerPrefs.SetInt("ContarColeta", 0);  
+        PlayerPrefs.SetInt("LixoColetado", 0);  
         }
 
 
@@ -21,9 +21,9 @@ public class ColetaLixo : MonoBehaviour
         
     }
 
-    public void  ContarColeta()
+    public void  LixoColetado()
     {
         ColetandoLixo++;
-        PlayerPrefs.SetInt("ContarColeta", ColetandoLixo);
+        PlayerPrefs.SetInt("LixoColetado", ColetandoLixo);
     }
 }

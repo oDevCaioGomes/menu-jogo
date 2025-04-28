@@ -34,10 +34,6 @@ public class SpawnInimigo : MonoBehaviour
     Instantiate(objetosParaSpawnar[objetoAleatorio], pontosDeSpawn[pontoDeSpawnAleatorio].position, Quaternion.Euler(0f, 0f, 0));
 
 
-    // Log para imprimir o nome do objeto e do ponto de spawn
-    Debug.Log("Spawnou: " + objetosParaSpawnar[objetoAleatorio].name + 
-              " no ponto: " + pontosDeSpawn[pontoDeSpawnAleatorio].name);
-
     // Reset do tempo
     tempoAtualSpawn = tempoEntreSpawns;
 }

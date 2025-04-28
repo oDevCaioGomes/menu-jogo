@@ -5,13 +5,26 @@ public class Inimigos : MonoBehaviour
 {
     public float velocidadeDoInimigo;
     public int ScoreGanho;
+    public int PoinTrash;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<ColetaLixo>().ContarColeta();
+            // Chama a função para coletar o lixo
+            collision.gameObject.GetComponent<ColetaLixo>().LixoColetado();
+
+             
+
+            // Atualiza a pontuação
             GameManager.Instance.Score(ScoreGanho);
+
+
+            collision.gameObject.GetComponent<PontoLixo>().TrashTest();
+            // Passa o valor de pointrash para o método MyTrash do GameManager
+            GameManager.Instance.MyTrash(PoinTrash);
+
+            // Destroi o inimigo
             Destroy(this.gameObject);
         }
     }
@@ -23,6 +36,7 @@ public class Inimigos : MonoBehaviour
 
     void Update()
     {
+        // Movimento do inimigo
         MovimentarInimigo();
     }
 
