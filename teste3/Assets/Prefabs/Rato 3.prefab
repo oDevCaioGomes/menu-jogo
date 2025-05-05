@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7701452158026279833}
   - component: {fileID: -3914470325420698299}
   m_Layer: 0
-  m_Name: Pilha
+  m_Name: Rato 3
   m_TagString: Lixo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.1067, y: 3.1067, z: 1}
+  m_LocalScale: {x: 2.700648, y: 2.700648, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6871985129736521845, guid: d987294681b20774f8fdcc313fcdd8d2, type: 3}
+  m_Sprite: {fileID: -883889768922872934, guid: 1934c990e834c724089a9ede41ef8418, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -2,7 +2,7 @@ using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class SpawnInimigo : MonoBehaviour
+public class SpawnLixo : MonoBehaviour
 {
     public GameObject[] objetosParaSpawnar;
     public Transform[] pontosDeSpawn;

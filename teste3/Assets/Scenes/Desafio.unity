@@ -623,6 +623,11 @@ MonoBehaviour:
   - {fileID: 4559531843651507399, guid: f7413da7ba1490a4e8e158cd7feb520e, type: 3}
   - {fileID: 4295015468197293254, guid: f01c96f7ff77f57449cb4a4b6f0d8ea6, type: 3}
   - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
+  - {fileID: 5293895279849346153, guid: 3858bbb698fae3b4bb5504a75c0cf3f5, type: 3}
+  - {fileID: 5293895279849346153, guid: 8f636839236311b4192f3057af3e4e37, type: 3}
+  - {fileID: 5293895279849346153, guid: 0aad90541bfd26644810fb5248b045dc, type: 3}
+  - {fileID: 5293895279849346153, guid: 2ee3ed95430d9af4889ccdf13dfdb292, type: 3}
+  - {fileID: 5293895279849346153, guid: d67b0f1e054502b49ba1b50a2c3a9534, type: 3}
   pontosDeSpawn:
   - {fileID: 358911311}
   - {fileID: 485983595}
@@ -1010,6 +1015,7 @@ GameObject:
   - component: {fileID: 1686056126}
   - component: {fileID: 1686056128}
   - component: {fileID: 1686056129}
+  - component: {fileID: 1686056130}
   m_Layer: 0
   m_Name: Guaxi_idle1_0
   m_TagString: Player
@@ -1233,6 +1239,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrashPoint: 0
+--- !u!114 &1686056130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686056118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83a3cd01218e06419fdb0209eda786d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaMax: 3
+  vidaAtual: 0
+  temEscudo: 0
 --- !u!1 &1883494046
 GameObject:
   m_ObjectHideFlags: 0
