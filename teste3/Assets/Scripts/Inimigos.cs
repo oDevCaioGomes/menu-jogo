@@ -24,7 +24,7 @@ public class Inimigos : MonoBehaviour
 
             collision.gameObject.GetComponent<PontoLixo>().TrashTest();
             // Passa o valor de pointrash para o método MyTrash do GameManager
-            GameManager.Instance.MyTrash(PoinTrash);
+            
 
             // Destroi o inimigo
             Destroy(this.gameObject);

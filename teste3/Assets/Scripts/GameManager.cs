@@ -23,8 +23,7 @@ public class GameManager : MonoBehaviour
 
         
         
-        Trash = 0;  
-        textLixo.text = "Lixo Coletado: " + Trash;
+        
     }
 
     
