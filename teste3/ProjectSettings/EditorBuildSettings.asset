@@ -9,9 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/menu.unity
     guid: a77e89da95ece894b8fa91d78805e43a
   - enabled: 1
-    path: Assets/Scenes/Desafio.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Modo Livre.unity
     guid: 45e707152912ca8499d637eb17b191cd
+  - enabled: 1
+    path: Assets/Scenes/Desafio.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

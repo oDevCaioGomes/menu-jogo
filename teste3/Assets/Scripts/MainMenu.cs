@@ -7,10 +7,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void PlayGame()
+    public void PlayModoLivre()
     {
     SceneManager.LoadSceneAsync(1);
     }
+    
+    public void PlayDesafio()
+    {
+    SceneManager.LoadSceneAsync(2);
+    }
+
+    
+    
 
     public void QuitGame()
     {
