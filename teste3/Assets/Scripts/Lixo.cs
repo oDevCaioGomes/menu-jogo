@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Inimigos : MonoBehaviour
+public class Lixo : MonoBehaviour
 {
     public float velocidadeDoInimigo;
     public int ScoreGanho;
@@ -11,7 +11,6 @@ public class Inimigos : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<VidaDoJogador>().TomarDano(1);
 
             // Chama a função para coletar o lixo
             collision.gameObject.GetComponent<ColetaLixo>().LixoColetado();

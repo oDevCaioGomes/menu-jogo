@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4604979194774766790}
   - component: {fileID: 7701452158026279833}
   - component: {fileID: -3914470325420698299}
+  - component: {fileID: 3977971415439599974}
   m_Layer: 0
   m_Name: Rato 3
-  m_TagString: Lixo
+  m_TagString: Rato
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,3 +169,15 @@ MonoBehaviour:
   velocidadeDoInimigo: 7
   ScoreGanho: 4
   PoinTrash: 0
+--- !u!114 &3977971415439599974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293895279849346153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fa45209eab21d4496d3ada65e56233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
