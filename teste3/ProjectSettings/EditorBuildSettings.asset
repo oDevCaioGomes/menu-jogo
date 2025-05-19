@@ -14,5 +14,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desafio.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Lvl1.unity
+    guid: 711a5afeaad8be94f90411c0a3255934
+  - enabled: 1
+    path: Assets/Scenes/Lvl1 2.unity
+    guid: 1b78ce875fe104846b6bf115c31146e2
+  - enabled: 1
+    path: Assets/Scenes/Lvl3.unity
+    guid: 163da2bc59fdf20458206b63ecbe6799
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
