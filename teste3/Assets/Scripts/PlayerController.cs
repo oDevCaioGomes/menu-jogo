@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
     // Referência para o componente Animator do personagem
     private Animator anim;
 
+    public bool podeMover = true;
+
     // Velocidade de movimento do personagem
     public float moveSpeed = 5f;
 
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
         limiteEsquerdaX = limiteEsquerda.x;
         limiteDireitaX = limiteDireita.x;
 
-        
+
     }
 
     void Update()
@@ -43,6 +45,8 @@ public class PlayerController : MonoBehaviour
     // Responsável por mover o jogador com base na posição do mouse
     private void MovimentarJogador()
     {
+
+        if (!podeMover) return;
         // Obtém a posição atual do mouse na tela
         Vector3 mousePos = Input.mousePosition;
 
@@ -81,4 +85,6 @@ public class PlayerController : MonoBehaviour
         // Define a variável "speed" no Animator com o valor absoluto da direção
         anim.SetFloat("speed", Math.Abs(direcao));
     }
+
+   
 }
