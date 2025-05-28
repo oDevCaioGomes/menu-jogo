@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 7
-  ScoreGanho: 4
+  ScoreGanho: 0
   PoinTrash: 0
 --- !u!114 &7908718866994664253
 MonoBehaviour:

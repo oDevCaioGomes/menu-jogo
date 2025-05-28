@@ -7,10 +7,20 @@ using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
     public TextMeshProUGUI pointsText;
+    public GameManager gm;
+
+    
     public void Setup(int score)
     {
         gameObject.SetActive(true);
-        pointsText.text = score.ToString() + " POINTS";
+       
+    }
+
+    public void Start()
+    {
+            pointsText.text = gm.pontuacaoAtual.ToString();
+        
+        
     }
 
     public void RestartButton()
