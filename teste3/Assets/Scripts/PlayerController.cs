@@ -1,7 +1,11 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
+
+
+
 {
     // Referência para o componente Animator do personagem
     private Animator anim;
@@ -86,5 +90,57 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("speed", Math.Abs(direcao));
     }
 
-   
+    /*
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Relogio"))
+        {
+             Acessa e modifica o valor de scaleOfTime do SpawnLixo
+            collision.gameObject.GetComponent<clockitem>().MudarTime(0.4f);
+
+
+            Destroy(this.gameObject); // Destroi o item relógio
+            Time.timeScale = 0.4f;
+            Destroy(collision.gameObject);
+
+            StartCoroutine("Esperar", 2f);
+
+            Debug.Log("laalalal");
+        }
+    
+    }
+
+    void Esperar()
+    {
+        Time.timeScale = 0.5f;
+        Debug.Log("passou 2segundos");
+    } 
+    */
+
+
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Relogio"))
+        {
+            // Acessa e modifica o valor de scaleOfTime do SpawnLixo
+            collision.gameObject.GetComponent<clockitem>().MudarTime(0.4f);
+
+            Destroy(collision.gameObject);
+
+            StartCoroutine(Esperar(2f));  // Agora passando o tempo corretamente
+
+            Debug.Log("Pegou o relógio");
+        }
+    }
+
+    // Agora é uma coroutine válida
+    IEnumerator Esperar(float tempo)
+    {
+        Time.timeScale = 0.4f; // diminui o tempo
+        yield return new WaitForSecondsRealtime(tempo); // tempo real (ignora timeScale)
+        Time.timeScale = 1f; // volta ao normal
+        Debug.Log("Tempo restaurado");
+    }
+
 }

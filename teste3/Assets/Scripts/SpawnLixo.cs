@@ -8,7 +8,7 @@ public class SpawnLixo : MonoBehaviour
     public Transform[] pontosDeSpawn;
     public float tempoEntreSpawns;
     public float tempoAtualSpawn;
-
+    
     void Start()
     {
         tempoAtualSpawn = tempoEntreSpawns;
@@ -24,6 +24,7 @@ public class SpawnLixo : MonoBehaviour
             SpawnarObjeto();
         }
 
+        
     }
 
    private void SpawnarObjeto()

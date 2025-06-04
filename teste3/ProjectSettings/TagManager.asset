@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Rato
+  - Lixo
+  - Relogio
   layers:
   - Default
   - TransparentFX

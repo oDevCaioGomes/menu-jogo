@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2563364856735570057}
   - component: {fileID: 7408953426065514384}
   - component: {fileID: 7929615970137640681}
+  - component: {fileID: 2845904941162544664}
   m_Layer: 0
   m_Name: Relogio
-  m_TagString: Lixo
+  m_TagString: Relogio
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,3 +179,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.22, y: 0.22}
   m_EdgeRadius: 0
+--- !u!114 &2845904941162544664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4071696025302066576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1029fb4bcce6cfb4e8d81d43aa117ed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleOfTime: 1

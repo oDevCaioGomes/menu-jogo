@@ -892,16 +892,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetosParaSpawnar:
-  - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
-  - {fileID: 4559531843651507399, guid: f7413da7ba1490a4e8e158cd7feb520e, type: 3}
-  - {fileID: 4295015468197293254, guid: f01c96f7ff77f57449cb4a4b6f0d8ea6, type: 3}
-  - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
-  - {fileID: 5293895279849346153, guid: 3858bbb698fae3b4bb5504a75c0cf3f5, type: 3}
-  - {fileID: 5293895279849346153, guid: 8f636839236311b4192f3057af3e4e37, type: 3}
-  - {fileID: 5293895279849346153, guid: 0aad90541bfd26644810fb5248b045dc, type: 3}
-  - {fileID: 5293895279849346153, guid: 2ee3ed95430d9af4889ccdf13dfdb292, type: 3}
-  - {fileID: 5293895279849346153, guid: d67b0f1e054502b49ba1b50a2c3a9534, type: 3}
   - {fileID: 4071696025302066576, guid: cc6b9e3ddce88064cbfadd0cc77dd5d6, type: 3}
+  - {fileID: 4071696025302066576, guid: cc6b9e3ddce88064cbfadd0cc77dd5d6, type: 3}
+  - {fileID: 4071696025302066576, guid: cc6b9e3ddce88064cbfadd0cc77dd5d6, type: 3}
+  - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
+  - {fileID: 4071696025302066576, guid: cc6b9e3ddce88064cbfadd0cc77dd5d6, type: 3}
+  - {fileID: 4071696025302066576, guid: cc6b9e3ddce88064cbfadd0cc77dd5d6, type: 3}
+  - {fileID: 5293895279849346153, guid: 0aad90541bfd26644810fb5248b045dc, type: 3}
+  - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
+  - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
+  - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
   pontosDeSpawn:
   - {fileID: 358911311}
   - {fileID: 485983595}
@@ -2097,7 +2097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   podeMover: 1
-  moveSpeed: 12
+  moveSpeed: 12.7
 --- !u!114 &1686056128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   - {fileID: 709084789}
   - {fileID: 1364896238}
   - {fileID: 1730495086}
-  vidaMax: 1
-  vidaAtual: 1
+  vidaMax: 3
+  vidaAtual: 3
   temEscudo: 0
   GameOverScreen: {fileID: 1492944848}
 --- !u!1 &1730495084
