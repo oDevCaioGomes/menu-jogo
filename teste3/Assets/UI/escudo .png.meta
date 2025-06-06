@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f8033b83a951e5419f2911acd4b1853
+guid: 78a3c9ef2cf84f949b65009bf23867a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5662783821573247211
-    second: relogio_0
+      213: 680196894445990561
+    second: escudo _0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: relogio_0
+      name: escudo _0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 6
-        width: 22
-        height: 22
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be0d3bc02ef369e40800000000000000
-      internalID: 5662783821573247211
+      spriteID: 1a2f6ceb87b807900800000000000000
+      internalID: 680196894445990561
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a982c55f3f3481e49bd99011065c73e7
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      relogio_0: 5662783821573247211
+      escudo _0: 680196894445990561
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

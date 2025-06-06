@@ -17,8 +17,12 @@ public class MainMenu : MonoBehaviour
     SceneManager.LoadSceneAsync(2);
     }
 
-    
-    
+    public void Loja()
+    {
+    SceneManager.LoadSceneAsync(5);
+    }
+
+
 
     public void QuitGame()
     {

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2f8033b83a951e5419f2911acd4b1853
+guid: 963619e685c1ed443a268b8b2f1406da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5662783821573247211
-    second: relogio_0
+      213: -4654850926754821772
+    second: Papel_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: relogio_0
+      name: Papel_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 6
-        width: 22
-        height: 22
+        x: 1
+        y: 3
+        width: 27
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be0d3bc02ef369e40800000000000000
-      internalID: 5662783821573247211
+      spriteID: 479816c9eb5a66fb0800000000000000
+      internalID: -4654850926754821772
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      relogio_0: 5662783821573247211
+      Papel_0: -4654850926754821772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
