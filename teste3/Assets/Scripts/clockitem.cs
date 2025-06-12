@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class clockitem : MonoBehaviour
+public class Clockitem : MonoBehaviour
 {
 
     

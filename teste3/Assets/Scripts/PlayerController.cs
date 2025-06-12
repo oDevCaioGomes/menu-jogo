@@ -2,18 +2,26 @@ using System;
 using UnityEngine;
 using System.Collections;
 
+using System.Collections.Generic;
+
+
 public class PlayerController : MonoBehaviour
 
 
 
+
+
 {
+   
+
+
     // Referência para o componente Animator do personagem
     private Animator anim;
 
     public bool podeMover = true;
 
     // Velocidade de movimento do personagem
-    public float moveSpeed = 5f;
+    public float moveSpeed = 19f;
 
     // Limites horizontais da tela (esquerda e direita)
     private float limiteEsquerdaX;
@@ -36,6 +44,9 @@ public class PlayerController : MonoBehaviour
         // Armazena os valores X dos limites para uso posterior
         limiteEsquerdaX = limiteEsquerda.x;
         limiteDireitaX = limiteDireita.x;
+
+
+        
 
 
     }
@@ -117,30 +128,32 @@ public class PlayerController : MonoBehaviour
     } 
     */
 
-
-
     void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Relogio"))
-        {
-            // Acessa e modifica o valor de scaleOfTime do SpawnLixo
-            collision.gameObject.GetComponent<clockitem>().MudarTime(0.4f);
+     {
+         if (collision.gameObject.CompareTag("Relogio"))
+         {
+             // Acessa e modifica o valor de scaleOfTime do SpawnLixo
+             collision.gameObject.GetComponent<Clockitem>().MudarTime(0.4f);
 
-            Destroy(collision.gameObject);
+             Destroy(collision.gameObject);
 
-            StartCoroutine(Esperar(2f));  // Agora passando o tempo corretamente
+             StartCoroutine(Esperar(2f));  // Agora passando o tempo corretamente
 
-            Debug.Log("Pegou o relógio");
-        }
-    }
+             Debug.Log("Pegou o relógio");
+         }
+     }
 
-    // Agora é uma coroutine válida
-    IEnumerator Esperar(float tempo)
-    {
-        Time.timeScale = 0.4f; // diminui o tempo
-        yield return new WaitForSecondsRealtime(tempo); // tempo real (ignora timeScale)
-        Time.timeScale = 1f; // volta ao normal
-        Debug.Log("Tempo restaurado");
-    }
+     // Agora é uma coroutine válida
+     IEnumerator Esperar(float tempo)
+     {
+         Time.timeScale = 0.4f; // diminui o tempo
+         yield return new WaitForSecondsRealtime(tempo); // tempo real (ignora timeScale)
+         Time.timeScale = 1f; // volta ao normal
+         Debug.Log("Tempo restaurado");
+     }
+ 
+
+
+        
 
 }
