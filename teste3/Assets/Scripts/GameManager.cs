@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
         textScore.text = "SCORE: " + pontuacaoAtual;
         if (pontuacaoAtual >= scoreNextlevel)
         {
+            
             LoadNextLevel();
         }
     }

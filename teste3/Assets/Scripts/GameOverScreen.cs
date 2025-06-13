@@ -9,18 +9,18 @@ public class GameOverScreen : MonoBehaviour
     public TextMeshProUGUI pointsText;
     public GameManager gm;
 
-    
+
     public void Setup(int score)
     {
         gameObject.SetActive(true);
-       
+
     }
 
     public void Start()
     {
-            pointsText.text = gm.pontuacaoAtual.ToString();
-        
-        
+        pointsText.text = gm.pontuacaoAtual.ToString();
+
+
     }
 
     public void RestartButton()
@@ -31,6 +31,9 @@ public class GameOverScreen : MonoBehaviour
 
     public void MenuButton()
     {
+        Time.timeScale = 0;
         SceneManager.LoadScene("menu");
     }
+
+   
 }
