@@ -143,8 +143,8 @@ TextureImporter:
         width: 1280
         height: 2120
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 400, y: 199, z: 354, w: 1392}
       customData: 
       outline: []
       physicsShape: []
@@ -160,13 +160,13 @@ TextureImporter:
       name: telawinguaxi_1
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1278
         y: 0
-        width: 1280
+        width: 888
         height: 2120
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 390, y: 328, z: 0, w: 1260}
       customData: 
       outline: []
       physicsShape: []
@@ -182,13 +182,13 @@ TextureImporter:
       name: telawinguaxi_2
       rect:
         serializedVersion: 2
-        x: 2560
+        x: 2904
         y: 0
-        width: 1280
+        width: 924
         height: 2120
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 205, z: 0, w: 1380}
       customData: 
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3840
-        y: 0
+        y: 328
         width: 1280
-        height: 2120
+        height: 1783
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 465, y: 0, z: 298, w: 1215}
       customData: 
       outline: []
       physicsShape: []
