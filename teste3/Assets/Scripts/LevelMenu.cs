@@ -14,10 +14,19 @@ public class LevelMenu : MonoBehaviour
    {
       SceneManager.LoadSceneAsync(2);
    }
+
+   public void QuitGame()
+   {
+      SceneManager.LoadSceneAsync(0);
+
+
+   }
     
-    public void QuitGame()
+
+    public void Menu()
     {
         SceneManager.LoadSceneAsync(0);
     }
+
 
 }
