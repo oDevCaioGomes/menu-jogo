@@ -167,3 +167,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadeDoInimigo: 7
   ScoreGanho: 2
+  ScoreFree: 2
+  PoinTrash: 0

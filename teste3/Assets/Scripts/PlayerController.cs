@@ -54,7 +54,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         // Chama o método de movimentação do jogador a cada frame
-        MovimentarJogador();
+
+       
+         MovimentarJogador();
     }
 
     // Responsável por mover o jogador com base na posição do mouse

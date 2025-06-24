@@ -5,29 +5,23 @@ using TMPro;
 using UnityEngine.UIElements;
 using UnityEditor;
 
-public class GameManager : MonoBehaviour
+public class GameManager1 : MonoBehaviour
 {
     public int pontuacaoAtual;
 
     public int Trash;
 
-    public static GameManager Instance;
-
-
+    public static GameManager1 Instance;
 
     public TextMeshProUGUI textScore;  // Corrigido aqui
 
     public TextMeshProUGUI textLixo;
 
-    public int scoreNextlevel;
-
-
-    public GameObject congratulations;
-
     public GameObject PausePanel;
-    public bool PauseState;
-    public bool FreeMode;
 
+    public bool PauseState;
+
+    public bool FreeMode;
 
     void Start()
     {
@@ -56,34 +50,26 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void Score(int Myscore)
+    public void Score1(int Myscore)
+    {
+       
+            pontuacaoAtual += Myscore;
+            textScore.text = "SCORE: " + pontuacaoAtual;
+    
+
+    }
+
+    public void ScoreFree(int Myscore)
     {
 
         pontuacaoAtual += Myscore;
         textScore.text = "SCORE: " + pontuacaoAtual;
-
-        if (FreeMode == false)
-        {
-            if (pontuacaoAtual >= scoreNextlevel)
-            {
-                Time.timeScale = 0;
-                congratulations.SetActive(true);
-            }
-
-        }
+        
+        
     }
 
-
-
-
-    void LoadNextLevel()
-    {
-        int nextSceneIndex = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneIndex);
-
-
-
-    }
+    
+    
 
 
 
@@ -114,7 +100,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-
+    
 
 
 }
