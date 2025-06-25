@@ -1,7 +1,9 @@
 using System;
 using System.Runtime.CompilerServices;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.UI;
 
 public class SpawnLixo : MonoBehaviour
 {
@@ -9,8 +11,11 @@ public class SpawnLixo : MonoBehaviour
     public Transform[] pontosDeSpawn;
     public float tempoEntreSpawns;
     public float tempoAtualSpawn;
-    public static GameManager Instance;
-    
+
+    public GameManager gameManager;
+
+
+
     void Start()
     {
         tempoAtualSpawn = tempoEntreSpawns;
@@ -26,24 +31,29 @@ public class SpawnLixo : MonoBehaviour
             SpawnarObjeto();
         }
 
-        
+
     }
 
-   private void SpawnarObjeto()
-{
-    int objetoAleatorio = UnityEngine.Random.Range(0, objetosParaSpawnar.Length);  
-    int pontoDeSpawnAleatorio = UnityEngine.Random.Range(0, pontosDeSpawn.Length);
-
-    GameObject meuLixo = Instantiate(objetosParaSpawnar[objetoAleatorio], pontosDeSpawn[pontoDeSpawnAleatorio].position, Quaternion.Euler(0f, 0f, 0));
-    meuLixo.GetComponent<Lixo>().velocidadeDoInimigo = 7 +(Score / 10);
-    
+    private void SpawnarObjeto()
+    {
 
 
-    // Reset do tempo
+
+        int objetoAleatorio = UnityEngine.Random.Range(0, objetosParaSpawnar.Length);
+        int pontoDeSpawnAleatorio = UnityEngine.Random.Range(0, pontosDeSpawn.Length);
+
+        GameObject meuLixo = Instantiate(objetosParaSpawnar[objetoAleatorio], pontosDeSpawn[pontoDeSpawnAleatorio].position, Quaternion.Euler(0f, 0f, 0));
+
+       
+        meuLixo.GetComponent<Lixo>().velocidadeDoInimigo = 7 + (GameManager.Instance.pontuacaoAtual / 5.5f);
+        
+
+        // Reset do tempo
         tempoAtualSpawn = tempoEntreSpawns;
-}
+       
+    }
 
-    
+
 }
 
 

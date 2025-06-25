@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public bool PauseState;
     public bool FreeMode;
 
+    
+
 
     void Start()
     {
@@ -56,10 +58,10 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void Score(int Myscore)
+    public void AddScore(int MyScore)
     {
 
-        pontuacaoAtual += Myscore;
+        pontuacaoAtual += MyScore;
         textScore.text = "SCORE: " + pontuacaoAtual;
 
         if (FreeMode == false)
@@ -72,6 +74,8 @@ public class GameManager : MonoBehaviour
 
         }
     }
+
+   
 
 
 
@@ -90,11 +94,7 @@ public class GameManager : MonoBehaviour
 
 
 
-    public void MyTrash(int Lixo)
-    {
-        Trash += Lixo;
-        textLixo.text = "Lixo Coletado: " + Trash;
-    }
+   
 
 
     public void Pause()

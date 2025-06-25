@@ -20,11 +20,11 @@ public class Lixo : MonoBehaviour
 
 
             // Atualiza a pontuação
-            GameManager.Instance.Score(ScoreGanho);
+            GameManager.Instance.AddScore(ScoreGanho);
 
 
 
-            collision.gameObject.GetComponent<PontoLixo>().TrashTest();
+            // collision.gameObject.GetComponent<PontoLixo>().TrashTest();
             // Passa o valor de pointrash para o método MyTrash do GameManager
 
 

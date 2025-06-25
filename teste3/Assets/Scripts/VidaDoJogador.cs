@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,7 +12,10 @@ public class VidaDoJogador : MonoBehaviour
     public int vidaMax;
     public int vidaAtual;
     public bool temEscudo;
+    public GameObject GameOverTeste;
 
+    
+    
 
 
     void Start()
@@ -52,6 +56,10 @@ public class VidaDoJogador : MonoBehaviour
 
             if (vidaAtual <= 0)
             {
+                Time.timeScale = 0;
+                GameOverTeste.SetActive(true);
+                
+                
                 GameOver();
             }
         }
@@ -59,18 +67,16 @@ public class VidaDoJogador : MonoBehaviour
 
 
     public GameOverScreen GameOverScreen;
-   public void GameOver()
-{
+    public void GameOver()
+    {
         if (GameOverScreen != null)
         {
             GameOverScreen.Setup(vidaAtual);
             GameObject.FindWithTag("Player").GetComponent<PlayerController>().podeMover = false;
             Time.timeScale = 0f;
-    }     
-}
+        }
+    }
 
     
-    
 
-    
 }

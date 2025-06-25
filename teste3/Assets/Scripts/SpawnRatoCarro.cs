@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using UnityEngine;
 
 public class SpawnRatoCarro : MonoBehaviour
@@ -44,3 +44,4 @@ public class SpawnRatoCarro : MonoBehaviour
         tempoAtualSpawn = tempoEntreSpawns;
     }
 }
+*/
