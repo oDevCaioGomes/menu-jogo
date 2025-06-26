@@ -3,7 +3,11 @@ using UnityEngine;
 public class Ratos : MonoBehaviour
 {
 
-AudioManager audioManager;
+    AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -12,7 +16,7 @@ AudioManager audioManager;
            
             collision.gameObject.GetComponent<VidaDoJogador>().TomarDano(1);
 
-             audioManager.PlaySFX(audioManager.damage);
+            audioManager.PlaySFX(audioManager.damage);
 
             // Destroi o inimigo
             Destroy(this.gameObject);

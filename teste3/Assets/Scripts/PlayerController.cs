@@ -13,6 +13,15 @@ public class PlayerController : MonoBehaviour
 
 {
    
+    public CharacterDataBase characterDb;
+
+   
+    public SpriteRenderer artworkSprite;
+
+    private int selectedOption = 0;
+
+
+
 
 
     // Referência para o componente Animator do personagem
@@ -30,6 +39,19 @@ public class PlayerController : MonoBehaviour
     // Referência para o componente SpriteRenderer, usado para virar o sprite
     private SpriteRenderer spriteRenderer;
 
+
+      private void UpdateCharacter(int selectedOption)
+    {
+        Character character = characterDb.GetCharacter(selectedOption);
+        artworkSprite.sprite = character.characterSprite;
+    }
+
+    public void Load()
+    {
+        selectedOption = PlayerPrefs.GetInt("selecttedOption");
+    }
+
+
     void Start()
     {
         // Obtém o componente Animator anexado ao GameObject
@@ -46,7 +68,18 @@ public class PlayerController : MonoBehaviour
         limiteDireitaX = limiteDireita.x;
 
 
-        
+
+        if (!PlayerPrefs.HasKey("selectedOption"))
+        {
+            selectedOption = 0;
+
+        }
+        else
+        {
+            Load();
+        }
+        UpdateCharacter(selectedOption);
+
 
 
     }

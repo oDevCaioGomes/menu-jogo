@@ -15,10 +15,13 @@ public class VidaDoJogador : MonoBehaviour
     public GameObject GameOverTeste;
     public GameObject PlayerDesactive;
 
-    
     public GameObject botaoReset;
-
+    public int maxHealthShield;
+    public int healthShield;
     AudioManager audioManager;
+
+    public GameObject shieldPlayer;
+
 
     private void Awake()
     {
@@ -32,6 +35,13 @@ public class VidaDoJogador : MonoBehaviour
     void Start()
     {
         vidaAtual = vidaMax;
+
+        shieldPlayer.SetActive(true);
+        temEscudo = true;
+
+
+
+        
     }
 
     // Update is called once per frame
@@ -58,17 +68,28 @@ public class VidaDoJogador : MonoBehaviour
 
     }
 
+    public void ShieldActive()
+    {
+        healthShield = maxHealthShield;
+        shieldPlayer.SetActive(true);
+        temEscudo = true;
+
+        
+    }
     public void TomarDano(int Dano)
     {
-       
-        
+
+        if (temEscudo == false)
+        {
+
+
             vidaAtual -= Dano;
             audioManager.PlaySFX(audioManager.damage);
 
 
             if (vidaAtual <= 0)
             {
-                
+
                 Time.timeScale = 0;
                 GameOverTeste.SetActive(true);
                 PlayerDesactive.SetActive(false);
@@ -78,8 +99,20 @@ public class VidaDoJogador : MonoBehaviour
 
             }
 
-        
+        }
+        else
+        {
+
+            healthShield -= Dano;
+            if (healthShield <= 0)
+            {
+                shieldPlayer.SetActive(false);
+                temEscudo = false;
+            }
+
+        }
     }
+    
 
 
     

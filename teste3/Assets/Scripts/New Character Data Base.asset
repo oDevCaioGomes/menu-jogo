@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739f3d58850b7274f879fadfdcd02352, type: 3}
+  m_Name: New Character Data Base
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: Panda Vermelho
+    characterSprite: {fileID: 6578344177339273368, guid: b97ee0576fef83f46bcaf701ff05f46e, type: 3}
+  - characterName: Guaxinim
+    characterSprite: {fileID: 1377859062119213929, guid: 9afaaa14c68b929409e43b7450044185, type: 3}
