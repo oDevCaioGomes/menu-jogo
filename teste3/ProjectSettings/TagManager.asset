@@ -8,6 +8,7 @@ TagManager:
   - Lixo
   - Relogio
   - Score
+  - Audio
   layers:
   - Default
   - TransparentFX

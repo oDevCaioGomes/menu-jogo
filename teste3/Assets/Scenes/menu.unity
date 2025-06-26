@@ -4671,6 +4671,8 @@ MonoBehaviour:
   musicSource: {fileID: 588261972}
   SFXSource: {fileID: 1560223152}
   background: {fileID: 8300000, guid: 425aba7848a3f2c4ebe3638b952d440b, type: 3}
+  damage: {fileID: 0}
+  collect: {fileID: 0}
 --- !u!4 &2144422456
 Transform:
   m_ObjectHideFlags: 0

@@ -45,7 +45,7 @@ public class SpawnLixo : MonoBehaviour
         GameObject meuLixo = Instantiate(objetosParaSpawnar[objetoAleatorio], pontosDeSpawn[pontoDeSpawnAleatorio].position, Quaternion.Euler(0f, 0f, 0));
 
        
-        meuLixo.GetComponent<Lixo>().velocidadeDoInimigo = 7 + (GameManager.Instance.pontuacaoAtual / 5.5f);
+        meuLixo.GetComponent<Lixo>().velocidadeDoInimigo = 7 + (GameManager.Instance.pontuacaoAtual / 15);
         
 
         // Reset do tempo

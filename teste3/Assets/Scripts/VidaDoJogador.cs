@@ -13,9 +13,20 @@ public class VidaDoJogador : MonoBehaviour
     public int vidaAtual;
     public bool temEscudo;
     public GameObject GameOverTeste;
+    public GameObject PlayerDesactive;
 
     
-    
+    public GameObject botaoReset;
+
+    AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
+
 
 
     void Start()
@@ -49,34 +60,29 @@ public class VidaDoJogador : MonoBehaviour
 
     public void TomarDano(int Dano)
     {
-        if (temEscudo == false)
-        {
+       
+        
             vidaAtual -= Dano;
+            audioManager.PlaySFX(audioManager.damage);
 
 
             if (vidaAtual <= 0)
             {
+                
                 Time.timeScale = 0;
                 GameOverTeste.SetActive(true);
-                
-                
-                GameOver();
+                PlayerDesactive.SetActive(false);
+                botaoReset.SetActive(true);
+
+
+
             }
-        }
+
+        
     }
 
 
-    public GameOverScreen GameOverScreen;
-    public void GameOver()
-    {
-        if (GameOverScreen != null)
-        {
-            GameOverScreen.Setup(vidaAtual);
-            GameObject.FindWithTag("Player").GetComponent<PlayerController>().podeMover = false;
-            Time.timeScale = 0f;
-        }
-    }
-
+    
     
 
 }

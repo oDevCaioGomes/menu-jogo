@@ -7,6 +7,7 @@ public class Lixo : MonoBehaviour
     public float velocidadeDoInimigo;
     public int ScoreGanho;
     public int PoinTrash;
+    AudioManager audioManager;
 
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -21,6 +22,8 @@ public class Lixo : MonoBehaviour
 
             // Atualiza a pontuação
             GameManager.Instance.AddScore(ScoreGanho);
+            audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+            audioManager.PlaySFX(audioManager.collect);
 
 
 

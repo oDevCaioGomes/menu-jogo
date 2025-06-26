@@ -103,32 +103,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("speed", Math.Abs(direcao));
     }
 
-    /*
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Relogio"))
-        {
-             Acessa e modifica o valor de scaleOfTime do SpawnLixo
-            collision.gameObject.GetComponent<clockitem>().MudarTime(0.4f);
-
-
-            Destroy(this.gameObject); // Destroi o item relógio
-            Time.timeScale = 0.4f;
-            Destroy(collision.gameObject);
-
-            StartCoroutine("Esperar", 2f);
-
-            Debug.Log("laalalal");
-        }
-    
-    }
-
-    void Esperar()
-    {
-        Time.timeScale = 0.5f;
-        Debug.Log("passou 2segundos");
-    } 
-    */
+   
 
     void OnTriggerEnter2D(Collider2D collision)
      {

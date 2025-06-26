@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     public bool PauseState;
     public bool FreeMode;
 
-    
+
 
 
     void Start()
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-   
+
 
 
 
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
 
 
 
-   
+
 
 
     public void Pause()
