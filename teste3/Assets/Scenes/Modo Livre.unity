@@ -1182,14 +1182,10 @@ MonoBehaviour:
   - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
   - {fileID: 4559531843651507399, guid: f7413da7ba1490a4e8e158cd7feb520e, type: 3}
   - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
-  - {fileID: 4071696025302066576, guid: ed42a9f90adf672489ed79ca7a4abec7, type: 3}
-  - {fileID: 5293895279849346153, guid: 8f636839236311b4192f3057af3e4e37, type: 3}
   - {fileID: 5293895279849346153, guid: 3858bbb698fae3b4bb5504a75c0cf3f5, type: 3}
-  - {fileID: 5293895279849346153, guid: 0aad90541bfd26644810fb5248b045dc, type: 3}
+  - {fileID: 5293895279849346153, guid: d67b0f1e054502b49ba1b50a2c3a9534, type: 3}
   - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
-  - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
-  - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
-  - {fileID: 5293895279849346153, guid: 9923e01918fc68c4aa778bb90b08ecdf, type: 3}
+  - {fileID: 2748329028899665455, guid: 4a73c825da7353e47b41769d5108ac5e, type: 3}
   pontosDeSpawn:
   - {fileID: 1315224003}
   - {fileID: 1706143372}
@@ -1651,15 +1647,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954518283}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2400001, y: 4.710001, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5107.775}
+  m_LocalScale: {x: 1.2398583, y: 4.709462, z: 0.9998857}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1729506181}
+  m_Father: {fileID: 1611917644}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 874}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -81}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954518285
@@ -2130,7 +2126,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 980, y: 1820.0001}
+  m_SizeDelta: {x: 980, y: 1820.0002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1103580209
 GameObject:
@@ -3190,6 +3186,7 @@ RectTransform:
   - {fileID: 2062152417}
   - {fileID: 653869054}
   - {fileID: 1683940297}
+  - {fileID: 954518284}
   - {fileID: 1729506181}
   - {fileID: 929224770}
   - {fileID: 1818027086}
@@ -3327,7 +3324,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1103158343}
-  - {fileID: 954518284}
   - {fileID: 2055970657}
   m_Father: {fileID: 1611917644}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3745,8 +3741,8 @@ MonoBehaviour:
   GameOverTeste: {fileID: 1818027085}
   PlayerDesactive: {fileID: 1826247688}
   botaoReset: {fileID: 743885208}
-  maxHealthShield: 5
-  healthShield: 5
+  maxHealthShield: 2
+  healthShield: 2
   shieldPlayer: {fileID: 207137199}
 --- !u!114 &1826247690
 MonoBehaviour:
@@ -4397,9 +4393,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
-        m_MethodName: MenuButton
+      - m_Target: {fileID: 929224771}
+        m_TargetAssemblyTypeName: LevelMenu, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

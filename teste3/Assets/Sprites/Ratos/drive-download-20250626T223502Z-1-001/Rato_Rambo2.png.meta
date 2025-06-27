@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: edd9b3e6b9368804cb834f9ae2d2bc72
+guid: f42e58898da61144fb648dd6c03c7177
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5963939069275687151
-    second: botaoloja1_0
+      213: 1616713163246294858
+    second: Rato_Rambo2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: botaoloja1_0
+      name: Rato_Rambo2_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 73
-        width: 237
-        height: 150
+        x: 5
+        y: 0
+        width: 20
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe840463cfa24c250800000000000000
-      internalID: 5963939069275687151
+      spriteID: a475ef66e08bf6610800000000000000
+      internalID: 1616713163246294858
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      botaoloja1_0: 5963939069275687151
+      Rato_Rambo2_0: 1616713163246294858
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

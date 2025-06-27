@@ -21,12 +21,22 @@ public class LevelMenu : MonoBehaviour
 
 
    }
-    
 
-    public void Menu()
-    {
-        SceneManager.LoadSceneAsync(0);
-    }
+
+   public void Menu()
+   {
+      SceneManager.LoadSceneAsync(0);
+   }
+
+   public void Store()
+   {
+      SceneManager.LoadSceneAsync(5);
+   }
+
+   public void Creditos()
+   {
+      SceneManager.LoadSceneAsync(6);
+   }
 
 
 }
